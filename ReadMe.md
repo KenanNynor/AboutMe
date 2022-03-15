@@ -1,2 +1,2 @@
 # Hi!
-Das ist eine Webseite über mich, welche unter anderen auch über meine hobbys handelt.
+This is my Website-project, which talks about me, myself and my hobbies.
