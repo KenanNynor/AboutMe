@@ -1,0 +1,310 @@
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    background-color: rgb(15, 15, 15);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    zoom: 75%;
+    background: url(/img/background.jpg) left top/cover no-repeat fixed;
+}
+
+
+/* Set cursor to pointer, if hovering over an Image element*/
+
+img,
+picture:hover {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* flex */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.flexD {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+
+/* Grid */
+
+.testimonial-grid {
+    margin-top: -100px;
+    display: grid;
+    gap: 1rem;
+    padding-block: 6.5rem;
+    width: min(70%, 80%);
+    margin-inline: auto;
+}
+
+@media (max-width: 80em) {
+    img {
+        max-height: 400px;
+    }
+}
+
+@media (min-width: 50em) {
+    .testimonial-grid {
+        zoom: 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .Z {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .B {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .R {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    .K {
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+    .V {
+        grid-row-start: 2;
+        grid-column-start: 4;
+    }
+    .C {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .G {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .M {
+        grid-row-start: 2;
+        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .A {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
+@media (min-width: 80em) {
+    .testimonial-grid {
+        zoom: 70%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .Z {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .B {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .R {
+        grid-row-start: 2;
+        grid-column-start: 1
+    }
+    .K {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .V {
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+    .C {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .G {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .M {
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-row-end: 3;
+        grid-column-end: 5;
+    }
+    .A {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
+.testimonial {
+    margin-top: -15px;
+    padding: 1px;
+    border-radius: 0.5rem;
+}
+
+.testimonial img {
+    height: 400px;
+    width: max-content;
+    aspect-ratio: 1;
+    border-radius: 10%;
+}
+
+.testimonial .name {
+    color: rgb(64, 235, 155);
+    text-align: center;
+    font-size: 40px;
+    line-height: 3.5;
+}
+
+.testimonial a:hover {
+    cursor: pointer;
+    font-size: larger;
+    line-height: 1;
+    font-size: 70px;
+}
+
+.greeting {
+    font-size: 50px;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.hobbyHeader {
+    font-family: 'Baloo Bhaijaan 2';
+    margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: -80px;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    color: white;
+    background-color: white;
+}
+
+header {
+    font-family: "Work Sans";
+    color: white;
+    font-size: 40px;
+    padding: 0.5em;
+    text-align: center;
+}
+
+aside {
+    margin-top: 100px;
+    color: White;
+    font-size: 35px;
+    text-align: left;
+}
+
+aside p {
+    border: 7.5px solid rgb(100, 100, 100);
+    border-radius: 35px;
+    overflow: hidden;
+    height: 2em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.DHead {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(64, 235, 155);
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.uberschriftD {
+    padding: 0.17em;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans';
+}
+
+.uberschrifth6 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans';
+}
