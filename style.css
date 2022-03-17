@@ -48,13 +48,13 @@ body {
 
 /* Set cursor to pointer, if hovering over an Image element*/
 
-img,
+.testimonial img,
 picture:hover {
     max-width: 100%;
     cursor: pointer;
 }
 
-img:hover {
+.testimonial img:hover {
     cursor: pointer;
     transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
@@ -77,7 +77,17 @@ select {
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+}
+
+.flexKenus {
+    margin-top: -1.25rem;
+    display: flex;
+    float: right;
+}
+
+.flexKenus img {
+    width: 15em;
+    height: auto;
 }
 
 .flexD {
@@ -90,7 +100,7 @@ select {
 }
 
 
-/* Grid */
+/* main */
 
 .testimonial-grid {
     display: grid;
@@ -226,28 +236,11 @@ select {
     font-size: 70px;
 }
 
-.greeting {
-    font-size: 50px;
-    padding: 0.5rem;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
 
-.hobbyHeader {
-    font-family: 'Baloo Bhaijaan 2';
-    margin-left: 100px;
-    margin-top: 200px;
-    margin-bottom: -80px;
-    font-size: 50px;
-    text-align: left;
-    color: white;
-}
+/* header */
 
-hr {
-    width: 100%;
-    height: 5px;
-    color: white;
-    background-color: white;
+#gridHobbyHead {
+    margin-top: 15rem;
 }
 
 header {
@@ -256,6 +249,65 @@ header {
     font-size: 40px;
     padding: 0.5em;
     text-align: center;
+}
+
+.hobbyHeader {
+    font-family: 'Baloo Bhaijaan 2';
+    margin-left: 100px;
+    margin-top: 2rem;
+    margin-bottom: -80px;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+.greeting {
+    font-size: 50px;
+    padding: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+/* about me */
+
+#aboutMeHr {
+    margin-top: 5rem;
+}
+
+.aboutMe {
+    float: right;
+}
+
+.aboutMe p {
+    margin-right: 50rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+/* aside */
+
+.DHead {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(64, 235, 155);
+    cursor: pointer;
+}
+
+.uberschriftD {
+    padding: 0.17em;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans';
+}
+
+.uberschrifth6 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans';
 }
 
 aside {
@@ -276,13 +328,8 @@ aside p {
     margin-bottom: 60px;
 }
 
-.DHead {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: rgb(64, 235, 155);
-    cursor: pointer;
-}
+
+/* general */
 
 a {
     cursor: pointer;
@@ -290,17 +337,9 @@ a {
     text-decoration: none;
 }
 
-.uberschriftD {
-    padding: 0.17em;
-    font-size: 60px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: 'Work Sans';
-}
-
-.uberschrifth6 {
-    font-size: 30px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: 'Work Sans';
+hr {
+    width: 100%;
+    height: 5px;
+    color: white;
+    background-color: white;
 }
