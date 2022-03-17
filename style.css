@@ -93,7 +93,6 @@ select {
 /* Grid */
 
 .testimonial-grid {
-    margin-top: -100px;
     display: grid;
     gap: 1rem;
     padding-block: 6.5rem;
@@ -206,27 +205,24 @@ select {
 .testimonial {
     margin-top: -15px;
     padding: 1px;
-    border-radius: 0.5rem;
 }
 
 .testimonial img {
     height: 400px;
-    width: max-content;
-    aspect-ratio: 1;
-    border-radius: 10%;
+    aspect-ratio: 1.2;
+    border-radius: 5rem;
 }
 
 .testimonial .name {
     color: rgb(64, 235, 155);
     text-align: center;
     font-size: 40px;
-    line-height: 3.5;
+    line-height: 3;
 }
 
 .testimonial a:hover {
     cursor: pointer;
-    font-size: larger;
-    line-height: 1;
+    line-height: 0;
     font-size: 70px;
 }
 
