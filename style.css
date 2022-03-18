@@ -239,16 +239,11 @@ select {
 
 /* header */
 
-#gridHobbyHead {
-    margin-top: 15rem;
-}
-
 header {
     font-family: "Work Sans";
     color: white;
-    font-size: 40px;
-    padding: 0.5em;
     text-align: center;
+    font-size: 40px;
 }
 
 .hobbyHeader {
@@ -262,8 +257,9 @@ header {
 }
 
 .greeting {
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
     font-size: 50px;
-    padding: 0.5rem;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -280,6 +276,9 @@ header {
 }
 
 .aboutMe p {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    text-align: left;
     margin-right: 50rem;
     font-family: 'IBM Plex Serif', serif;
 }
@@ -342,4 +341,8 @@ hr {
     height: 5px;
     color: white;
     background-color: white;
+}
+
+::selection {
+    background: rgba(4, 126, 69, 0.644);
 }
