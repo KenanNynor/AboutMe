@@ -46,6 +46,32 @@ body {
 }
 
 
+/* changed scrollbar color */
+
+body::-webkit-scrollbar {
+    /* width of the entire scrollbar */
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    /* color of the tracking area */
+    background: rgb(60, 60, 60);
+    /* roundness of the scroll area */
+}
+
+body::-webkit-scrollbar-thumb {
+    /* color of the scroll thumb */
+    background-color: rgb(30, 30, 30);
+    /* roundness of the scroll thumb */
+    border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    /* color of the scroll thumb */
+    background-color: rgb(15, 15, 15);
+}
+
+
 /* Set cursor to pointer, if hovering over an Image element*/
 
 .testimonial img,
@@ -88,6 +114,7 @@ select {
 .flexKenus img {
     width: 15em;
     height: auto;
+    border-radius: 2rem 0rem 0rem 2rem;
 }
 
 .flexD {
@@ -115,6 +142,17 @@ select {
         max-height: 400px;
     }
 }
+
+
+/*
+
+@media (max-width: 50em) {
+    img {
+        width: 19999px;
+    }
+}
+
+*/
 
 @media (min-width: 50em) {
     .testimonial-grid {
