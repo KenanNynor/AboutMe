@@ -1,3 +1,25 @@
+/* ! bla bla */
+
+
+/* bug bla bla */
+
+
+/* ?  bla bla bla*/
+
+
+/* // bla bla */
+
+
+/* * bla bla bla */
+
+
+/* todo bla bla bla */
+
+:root {
+    --green-color: rgb(64, 235, 155);
+}
+
+
 /* Box sizing rules */
 
 *,
@@ -46,7 +68,7 @@ body {
 }
 
 
-/* changed scrollbar color */
+/* changed scrollbar */
 
 body::-webkit-scrollbar {
     /* width of the entire scrollbar */
@@ -61,14 +83,14 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     /* color of the scroll thumb */
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(10, 10, 10);
     /* roundness of the scroll thumb */
     border-radius: 25px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
     /* color of the scroll thumb */
-    background-color: rgb(15, 15, 15);
+    background: linear-gradient(black 50%, rgb(64, 235, 155));
 }
 
 
@@ -127,32 +149,20 @@ select {
 }
 
 
-/* main */
+/* !main */
+
+
+/* bug: music grid media bug  */
 
 .testimonial-grid {
     display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 6.5rem;
     gap: 1rem;
-    padding-block: 6.5rem;
-    width: min(70%, 80%);
     margin-inline: auto;
 }
-
-@media (max-width: 80em) {
-    img {
-        max-height: 400px;
-    }
-}
-
-
-/*
-
-@media (max-width: 50em) {
-    img {
-        width: 19999px;
-    }
-}
-
-*/
 
 @media (min-width: 50em) {
     .testimonial-grid {
@@ -262,7 +272,7 @@ select {
 }
 
 .testimonial .name {
-    color: rgb(64, 235, 155);
+    color: var(--green-color);
     text-align: center;
     font-size: 40px;
     line-height: 3;
@@ -275,7 +285,10 @@ select {
 }
 
 
-/* header */
+/* todo: fix bug */
+
+
+/* !header */
 
 header {
     font-family: "Work Sans";
@@ -299,11 +312,11 @@ header {
     margin-bottom: -0.5rem;
     font-size: 50px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 
-/* about me */
+/* !about me */
 
 #aboutMeHr {
     margin-top: 5rem;
@@ -322,13 +335,13 @@ header {
 }
 
 
-/* aside */
+/* !aside */
 
 .DHead {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
-    color: rgb(64, 235, 155);
+    color: var(--green-color);
     cursor: pointer;
 }
 
@@ -336,14 +349,14 @@ header {
     padding: 0.17em;
     font-size: 60px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: 'Work Sans';
 }
 
 .uberschrifth6 {
     font-size: 30px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: 'Work Sans';
 }
 
@@ -366,7 +379,7 @@ aside p {
 }
 
 
-/* general */
+/* !general */
 
 a {
     cursor: pointer;
