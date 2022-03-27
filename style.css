@@ -83,7 +83,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     /* color of the scroll thumb */
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(20, 20, 20);
     /* roundness of the scroll thumb */
     border-radius: 25px;
 }
