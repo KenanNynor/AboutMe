@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -15,91 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Quicksand&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
     <title>About Kenan</title>
-
-
-
-    <script>
-        /* On Header-click, open the description*/
-
-        function change_css1() {
-            document.getElementById('expand1').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css2() {
-            document.getElementById('expand2').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css3() {
-            document.getElementById('expand3').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css4() {
-            document.getElementById('expand4').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css5() {
-            document.getElementById('expand5').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css6() {
-            document.getElementById('expand6').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css7() {
-            document.getElementById('expand7').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css8() {
-            document.getElementById('expand8').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        function change_css9() {
-            document.getElementById('expand9').style.cssText = 'overflow: visible; height: auto;';
-        }
-
-        /* On Description-click, close the description */
-
-        function css_change1() {
-            document.getElementById('expand1').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change2() {
-            document.getElementById('expand2').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change3() {
-            document.getElementById('expand3').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change4() {
-            document.getElementById('expand4').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change5() {
-            document.getElementById('expand5').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change6() {
-            document.getElementById('expand6').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change7() {
-            document.getElementById('expand7').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change8() {
-            document.getElementById('expand8').style.cssText = 'overflow: hide; height: 2em;';
-        }
-
-        function css_change9() {
-            document.getElementById('expand9').style.cssText = 'overflow: hide; height: 2em;';
-        }
+    <script src="script.js">
     </script>
-
 </head>
 
 <body>
-
 
     <header>
         <!-- todo <a href="#Hi" class="Menu">Startseite</a>
@@ -112,7 +32,7 @@
         </nav>
         <hr id="aboutMeHr" />
 
-        <!-- Description of myself -->
+        <!--? Description of myself -->
 
         <div class="aboutMe">
 
@@ -192,7 +112,7 @@
             </div>
         </article>
 
-        <!-- bug music grid media   -->
+        <!--bug: music grid media   -->
 
         <article class="M testimonial flow text-neutral-100 border">
             <div class="flex">
@@ -225,7 +145,7 @@
 
     <aside id="description">
 
-        <!-- Heading of Description -->
+        <!-- ? Heading of Description -->
 
         <div>
             <hr id="descript" />
@@ -237,15 +157,15 @@
 
         <hr id="RDes" />
 
-        <!-- Begin of Description -->
+        <!-- ? Begin of Description -->
 
-        <div>
+        <div class="beginOfDescription">
 
             <div class="flexD">
                 <h2 class="DHead" onclick="change_css1();">Der Rubik's Cube</h2>
             </div>
             <div>
-                <p id="expand1" onclick="css_change1();">
+                <p class="closed" id="expand1" onclick="css_change1();">
                     (Bekommen an Kirmes, wollte lösen, konnte beginner method wollte bessere und neue cubes, hab aufgehört, random wegen dem Zaubern Rubiks Cube wieder in die Schule gebracht (Frühling 2021), Leon fragte mich ob ich Turnier gehen will, ich war zu schlecht
                     damals, 58 sek pb, Türkei reise, dort Cfop gelernt)
                 </p>
@@ -257,7 +177,7 @@
                 <h2 class="DHead" onclick="change_css2();">Die Zauberei</h2>
             </div>
             <div>
-                <p id="expand2" onclick="css_change2();"> Meine Fingerfertigkeit zu üben, bis ich andere "foolen" kann ("foolen" = jemand anderen einen Zaubertrick als wahr zu verkaufen), tat ich insgesamt 1-2 Jahre lang. Ich übte so gut wie jeden Tag mit meinen Karten in der Hand, sei es beim
+                <p class="closed" id="expand2" onclick="css_change2();"> Meine Fingerfertigkeit zu üben, bis ich andere "foolen" kann ("foolen" = jemand anderen einen Zaubertrick als wahr zu verkaufen), tat ich insgesamt 1-2 Jahre lang. Ich übte so gut wie jeden Tag mit meinen Karten in der Hand, sei es beim
                     Zocken, beim Warten, oder in der Schule. Ich habe sogar in der Schule vielen Schülern und Lehrern meine Zaubertricks gezeigt und die gefoolt. Begonnen hat das ganze mit meinem Vater. Er drückte mir als ich ca. 12 war, Pokerkarten in
                     die Hand und wollte mit mir Karten spielen. Wir spielten und ein paar Stunden später guckte ich mir auf YouTube Tutorials für Kartentricks an. Das tat ich in der Vergangenheit sogar schon einmal, aber erfolglos. Ich entdeckte den Kanal
                     "MrTrixxl" ziemlich schnell und lernte vieles. Ich kaufte mir für mehr als 100€ immer mehr Karten und habe viele Tricks gelernt. Nicht nur Magie sondern auch Cardistry. Cardistry steht für die Kunst, welche man mit Karten machen kann
@@ -272,7 +192,7 @@
                 <h2 class="DHead" onclick="change_css3();">Das Beatboxen</h2>
             </div>
             <div>
-                <p id="expand3" onclick="css_change3();">
+                <p class="closed" id="expand3" onclick="css_change3();">
                     Mit dem Beatbox fing ich durch den berühmten YouTuber "Taddl" an. Sein Video "Hi!" wurde mir ziemlich oft empfohlen, welches ich mir irgendwann angeguckt hab. Irgendwann hat er mit Beatbox-Reactions angefangen. Ich schaute die mir an. Zu dem Zeitpunkt
                     hatte er schon 1 ca. Jahr Beatbox erfahrung (Datum: 08.02.2020). Er machte viele Videos zu dem Thema Beatbox und beatboxte selber auch in ein paar Videos. Ein Mädchen (welche die Videos leider mittlerweile runtergenommen hat) hat Beatbox
                     Compilations von Taddl's Beatbox Videos gemacht. Basically eine Compilation wo Taddl nur beatboxt. Das hab ich mir oft angehört, weil ich das cool fand. Irgendwann war er in dem "Lustige H4TE Kommentare an Taddl und mich vorlesen"
@@ -300,7 +220,7 @@
                 <h2 class="DHead" onclick="change_css4();">Gaming</h2>
             </div>
             <div>
-                <p id="expand4" onclick="css_change4();">
+                <p class="closed" id="expand4" onclick="css_change4();">
 
                 </p>
             </div>
@@ -311,7 +231,7 @@
                 <h2 class="DHead" onclick="change_css5();">Das Zeichnen</h2>
             </div>
             <div>
-                <p id="expand5" onclick="css_change5();">
+                <p class="closed" id="expand5" onclick="css_change5();">
                     Anime gucken hat mich dazu inspiriert zu zeichnen. Ich hab nie echte Zeichnen gemacht, meistens nur im Manga-Style. Meinen ersten Anime hat mir ein sehr guter Freund von mir im Frühling/Sommer 2020 empfohlen. Der Anime hieß "ERASED" und ich habe es innerhalb
                     ein paar Tage 2 mal durchgeguckt. Dann wollte ich auch sowas zeichnen. Also suchte ich auf YouTube
                 </p>
@@ -323,7 +243,7 @@
                 <h2 class="DHead" onclick="change_css6();">Das Anime gucken</h2>
             </div>
             <div>
-                <p id="expand6" onclick="css_change6();">
+                <p class="closed" id="expand6" onclick="css_change6();">
 
                 </p>
             </div>
@@ -334,7 +254,7 @@
                 <h2 class="DHead" onclick="change_css7();">Die Videos gucken/machen</h2>
             </div>
             <div>
-                <p id="expand7" onclick="css_change7();">
+                <p class="closed" id="expand7" onclick="css_change7();">
 
                 </p>
             </div>
@@ -345,7 +265,7 @@
                 <h2 class="DHead" onclick="change_css8();">Musik machen</h2>
             </div>
             <div>
-                <p id="expand8" onclick="css_change8();">
+                <p class="closed" id="expand8" onclick="css_change8();">
                     Mit der Musik habe ich am 10.02.2021 angefangen. Ich habe mir die Loopstation bestellt, da ich die bei meinen Freunden sah und auch haben wollte. Natürlich durfte Kopfhörer und Mikrofon nicht fehlen, welches einen Gesamtpreis von ca. 500 € ergab. Als
                     diese ankam, war ich sehr glücklich. Die Loopstation ist ein Gerät, welches Sounds aufnimmt und "loopt", also immer wiederholt. Da sie mit sämtlichen Effekten kommt, kann man da rein Beatboxen und somit Beats kreieren. Ich habe mir
                     sofort ein Tutorial für "Headshot" von Ryhtmind angeguckt. Das Tutorial war scheiße, zumindest für beginner. Als ich ein einfacheres Tutorial von "BenBeat Beatbox" gesehen hatte, studierte ich diese Routine. Ich bekam sie einigermaßen
@@ -363,7 +283,7 @@
                 <h2 class="DHead" onclick="change_css9();">Das Coden</h2>
             </div>
             <div>
-                <p id="expand9" onclick="css_change9();">
+                <p class="closed" id="expand9" onclick="css_change9();">
                     (schulpraktikum, wollte code-praktikum machen konnte aber nicht coden, deswegen gelernt, seit (guck auf datei datum))
                 </p>
             </div>
@@ -374,6 +294,10 @@
 
     </aside>
 
+    <div class="btnModeSwitch">
+        <button id="btnSwitch" onclick="darkMode();"><p>Switch to Dark mode!</p></button>
+        <button id="btnSwitch" onclick="whiteMode();"><p>Switch to White mode!</p></button>
+    </div>
 
 </body>
 

@@ -20,7 +20,7 @@
 }
 
 
-/* Box sizing rules */
+/* ? Box sizing rules */
 
 *,
 *::before,
@@ -29,7 +29,7 @@
 }
 
 
-/* Remove default margin */
+/* ? Remove default margin */
 
 body,
 h1,
@@ -45,7 +45,7 @@ dd {
 }
 
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* ? Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
 ul[role="list"],
 ol[role="list"] {
@@ -68,7 +68,7 @@ body {
 }
 
 
-/* changed scrollbar */
+/* ? changed scrollbar */
 
 body::-webkit-scrollbar {
     /* width of the entire scrollbar */
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* Set cursor to pointer, if hovering over an Image element*/
+/* ? Set cursor to pointer, if hovering over an Image element*/
 
 .testimonial img,
 picture:hover {
@@ -105,13 +105,10 @@ picture:hover {
 .testimonial img:hover {
     cursor: pointer;
     transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1, 1.1);
 }
 
 
-/* Inherit fonts for inputs and buttons */
+/* ? Inherit fonts for inputs and buttons */
 
 input,
 button,
@@ -121,7 +118,7 @@ select {
 }
 
 
-/* flex */
+/* * flex */
 
 .flex {
     display: flex;
@@ -153,6 +150,9 @@ select {
 
 
 /* bug: music grid media bug  */
+
+
+/* todo: fix bug */
 
 .testimonial-grid {
     display: grid;
@@ -275,7 +275,9 @@ select {
     color: var(--green-color);
     text-align: center;
     font-size: 40px;
-    line-height: 3;
+    line-height: 1;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .testimonial a:hover {
@@ -283,9 +285,6 @@ select {
     line-height: 0;
     font-size: 70px;
 }
-
-
-/* todo: fix bug */
 
 
 /* !header */
@@ -367,15 +366,37 @@ aside {
     text-align: left;
 }
 
+
+/* // todo: blur the border and make it transparent */
+
 aside p {
-    border: 7.5px solid rgb(100, 100, 100);
+    border: 5px solid var(--green-color);
+    box-shadow: 0px 0px 5px 5px var(--green-color);
     border-radius: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0 50px 25px 50px;
     overflow: hidden;
-    height: 2em;
     font-family: 'Quicksand', sans-serif;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
     margin-bottom: 60px;
+}
+
+
+/* ? Javascript "open" "close" classes */
+
+
+/* todo: Make transition if header/text is clicked */
+
+.opened {
+    overflow: visible;
+    height: auto;
+}
+
+.closed {
+    overflow: hide;
+    height: 2em;
 }
 
 
@@ -396,4 +417,38 @@ hr {
 
 ::selection {
     background: rgba(4, 126, 69, 0.644);
+}
+
+
+/* ! Dark/White Mode Switch */
+
+
+/* bug: fix that images get inverted */
+
+
+/* todo: fix bug */
+
+#btnSwitch p {
+    font-size: 1.5rem;
+}
+
+#btnSwitch {
+    margin: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    color: rgb(64, 235, 155);
+    border: 5px solid rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+#btnSwitch:hover {
+    cursor: pointer;
+}
+
+.whitemode {
+    filter: invert(100%);
+}
+
+.darkmode {
+    filter: invert(0%);
 }
