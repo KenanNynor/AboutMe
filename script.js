@@ -1,95 +1,76 @@
-  // todo: make transition
+  // // todo: make transition
 
-  // ? On Header-click, open the description
+  // ? On Header-click, open/close the description
 
-  function change_css1() {
-      document.getElementById('expand1').setAttribute("class", "opened");
-  }
+  $(document).ready(function() {
+      $("#expand1H").click(function() {
+          $("#expand1P").toggle(400);
+      });
 
-  function change_css2() {
-      document.getElementById('expand2').setAttribute("class", "opened");
-  }
+      $("#expand2H").click(function() {
+          $("#expand2P").toggle(400);
+      });
 
-  function change_css3() {
-      document.getElementById('expand3').setAttribute("class", "opened");
-  }
+      $("#expand3H").click(function() {
+          $("#expand3P").toggle(400);
+      });
 
-  function change_css4() {
-      document.getElementById('expand4').setAttribute("class", "opened");
-  }
+      $("#expand4H").click(function() {
+          $("#expand4P").toggle(400);
+      });
 
-  function change_css5() {
-      document.getElementById('expand5').setAttribute("class", "opened");
-  }
+      $("#expand5H").click(function() {
+          $("#expand5P").toggle(400);
+      });
 
-  function change_css6() {
-      document.getElementById('expand6').setAttribute("class", "opened");
-  }
+      $("#expand6H").click(function() {
+          $("#expand6P").toggle(400);
+      });
 
-  function change_css7() {
-      document.getElementById('expand7').setAttribute("class", "opened");
-  }
+      $("#expand7H").click(function() {
+          $("#expand7P").toggle(400);
+      });
 
-  function change_css8() {
-      document.getElementById('expand8').setAttribute("class", "opened");
-  }
+      $("#expand8H").click(function() {
+          $("#expand8P").toggle(400);
+      });
 
-  function change_css9() {
-      document.getElementById('expand9').setAttribute("class", "opened");
-  }
+      $("#expand9H").click(function() {
+          $("#expand9P").toggle(400);
+      });
+  });
 
-  // ? On Description-click, close the description
 
-  function css_change1() {
-      document.getElementById('expand1').setAttribute("class", "closed");
-  }
-
-  function css_change2() {
-      document.getElementById('expand2').setAttribute("class", "closed");
-  }
-
-  function css_change3() {
-      document.getElementById('expand3').setAttribute("class", "closed");
-  }
-
-  function css_change4() {
-      document.getElementById('expand4').setAttribute("class", "closed");
-  }
-
-  function css_change5() {
-      document.getElementById('expand5').setAttribute("class", "closed");
-  }
-
-  function css_change6() {
-      document.getElementById('expand6').setAttribute("class", "closed");
-  }
-
-  function css_change7() {
-      document.getElementById('expand7').setAttribute("class", "closed");
-  }
-
-  function css_change8() {
-      document.getElementById('expand8').setAttribute("class", "closed");
-  }
-
-  function css_change9() {
-
-      document.getElementById('expand9').setAttribute("class", "closed");
-  }
 
   // ? Dark/White Mode Switch
 
-  // bug: fix that images get inverted
-
-  // todo: fix bug
-
+  // // bug: fix that images get inverted
+  // // todo: fix bug
 
   function darkMode() {
       document.getElementById('html').setAttribute("class", "darkmode");
-      document.getElementsByClassName('whitemodeImg').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg1').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg2').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg3').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg4').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg5').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg6').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg7').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg8').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg9').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg10').setAttribute("class", "darkmode");
   }
 
   function whiteMode() {
       document.getElementById('html').setAttribute("class", "whitemode");
-      document.getElementsByClassName('whitemodeImg').setAttribute("class", "darkmode");
+      document.getElementById('invertedImg1').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg2').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg3').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg4').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg5').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg6').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg7').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg8').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg9').setAttribute("class", "whitemode");
+      document.getElementById('invertedImg10').setAttribute("class", "whitemode");
   }
