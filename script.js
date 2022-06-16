@@ -43,12 +43,10 @@ $(document).ready(function() {
     // // todo: fix bug
 
     // todo: make selection invert too
+    // ! Perhaps not possible
 
     $("#switchBtn").click(function() {
         $("html, img").toggleClass("buttonSwitch");
     });
-
-
-
 
 });
