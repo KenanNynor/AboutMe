@@ -158,10 +158,10 @@ select {
 /* !Main: About my Hobbies  */
 
 
-/* bug: music grid media bug  */
+/* // bug: music grid media bug  */
 
 
-/* todo: fix bug,
+/* // todo: fix bug,
 todo: Überarbeite grid und mache comments, classes, values etc. besser! */
 
 .testimonial-grid {
@@ -174,41 +174,73 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
     margin-inline: auto;
 }
 
+@media (max-width: 50em) {
+    .testimonial img {
+        aspect-ratio: 1;
+        border-radius: 5rem;
+    }
+}
+
 @media (min-width: 50em) {
     .testimonial-grid {
         zoom: 50%;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(4, 1fr);
     }
+    .testimonial img {
+        height: 400px;
+        border-radius: 5rem;
+    }
     .Z {
         grid-row-start: 1;
         grid-column-start: 3;
         grid-column-end: 5;
     }
+    .Z img {
+        aspect-ratio: 3.05;
+    }
     .B {
         grid-row-start: 1;
         grid-column-start: 1;
+    }
+    .B img {
+        aspect-ratio: 1.3;
     }
     .R {
         grid-row-start: 1;
         grid-column-start: 2;
     }
+    .R img {
+        aspect-ratio: 1.3;
+    }
     .K {
         grid-row-start: 2;
         grid-column-start: 3;
+    }
+    .K img {
+        aspect-ratio: 1.3;
     }
     .V {
         grid-row-start: 2;
         grid-column-start: 4;
     }
+    .V img {
+        aspect-ratio: 1.3;
+    }
     .C {
         grid-row-start: 3;
         grid-column-start: 1;
+    }
+    .C img {
+        aspect-ratio: 1.3;
     }
     .G {
         grid-row-start: 3;
         grid-column-start: 3;
         grid-column-end: 5;
+    }
+    .G img {
+        aspect-ratio: 3.05;
     }
     .M {
         grid-row-start: 2;
@@ -216,57 +248,15 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .A {
-        grid-row-start: 3;
-        grid-column-start: 2;
-    }
-}
-
-@media (min-width: 80em) {
-    .testimonial-grid {
-        zoom: 70%;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .Z {
-        grid-row-start: 1;
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-    .B {
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-    .R {
-        grid-row-start: 2;
-        grid-column-start: 1
-    }
-    .K {
-        grid-row-start: 2;
-        grid-column-start: 2;
-    }
-    .V {
-        grid-row-start: 2;
-        grid-column-start: 3;
-    }
-    .C {
-        grid-row-start: 3;
-        grid-column-start: 1;
-    }
-    .G {
-        grid-row-start: 3;
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .M {
-        grid-row-start: 1;
-        grid-column-start: 4;
-        grid-row-end: 3;
-        grid-column-end: 5;
+    .M img {
+        aspect-ratio: 3.05;
     }
     .A {
         grid-row-start: 3;
         grid-column-start: 2;
+    }
+    .A img {
+        aspect-ratio: 1.3;
     }
 }
 
@@ -276,15 +266,14 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
 }
 
 .testimonial img {
-    height: 400px;
-    aspect-ratio: 1.2;
+    height: 500px;
     border-radius: 5rem;
 }
 
 .testimonial .name {
     color: var(--green-color);
     text-align: center;
-    font-size: 40px;
+    font-size: 70px;
     line-height: 1;
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -293,7 +282,7 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
 .testimonial a:hover {
     cursor: pointer;
     line-height: 0;
-    font-size: 70px;
+    font-size: 90px;
 }
 
 
