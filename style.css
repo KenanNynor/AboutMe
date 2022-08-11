@@ -155,7 +155,54 @@ select {
 }
 
 
-/* !Main: About my Hobbies  */
+/* ! Header: nav etc. */
+
+header {
+    font-family: "Work Sans";
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.hobbyHeader {
+    font-family: 'Baloo Bhaijaan 2';
+    margin-left: 100px;
+    margin-top: 2rem;
+    margin-bottom: -80px;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+}
+
+.greeting {
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+/* ! About me: text, img etc. */
+
+#aboutMeHr {
+    margin-top: 5rem;
+}
+
+.aboutMe {
+    float: right;
+}
+
+.aboutMe p {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    text-align: left;
+    margin-right: 50rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+/* ! Main: About my Hobbies  */
 
 
 /* // bug: music grid media bug  */
@@ -196,51 +243,30 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
         grid-column-start: 3;
         grid-column-end: 5;
     }
-    .Z img {
-        aspect-ratio: 3.05;
-    }
     .B {
         grid-row-start: 1;
         grid-column-start: 1;
-    }
-    .B img {
-        aspect-ratio: 1.3;
     }
     .R {
         grid-row-start: 1;
         grid-column-start: 2;
     }
-    .R img {
-        aspect-ratio: 1.3;
-    }
     .K {
         grid-row-start: 2;
         grid-column-start: 3;
-    }
-    .K img {
-        aspect-ratio: 1.3;
     }
     .V {
         grid-row-start: 2;
         grid-column-start: 4;
     }
-    .V img {
-        aspect-ratio: 1.3;
-    }
     .C {
         grid-row-start: 3;
         grid-column-start: 1;
-    }
-    .C img {
-        aspect-ratio: 1.3;
     }
     .G {
         grid-row-start: 3;
         grid-column-start: 3;
         grid-column-end: 5;
-    }
-    .G img {
-        aspect-ratio: 3.05;
     }
     .M {
         grid-row-start: 2;
@@ -248,15 +274,22 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .M img {
-        aspect-ratio: 3.05;
-    }
     .A {
         grid-row-start: 3;
         grid-column-start: 2;
     }
+    .B img,
+    .R img,
+    .K img,
+    .V img,
+    .C img,
     .A img {
         aspect-ratio: 1.3;
+    }
+    .Z img,
+    .G img,
+    .M img {
+        aspect-ratio: 3.05;
     }
 }
 
@@ -286,54 +319,7 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
 }
 
 
-/* !hHeader: nav etc. */
-
-header {
-    font-family: "Work Sans";
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
-
-.hobbyHeader {
-    font-family: 'Baloo Bhaijaan 2';
-    margin-left: 100px;
-    margin-top: 2rem;
-    margin-bottom: -80px;
-    font-size: 50px;
-    text-align: left;
-    color: white;
-}
-
-.greeting {
-    margin-top: 0.5rem;
-    margin-bottom: -0.5rem;
-    font-size: 50px;
-    text-align: center;
-    color: white;
-}
-
-
-/* !about me: text, img etc. */
-
-#aboutMeHr {
-    margin-top: 5rem;
-}
-
-.aboutMe {
-    float: right;
-}
-
-.aboutMe p {
-    padding: 0.5rem;
-    margin-left: 1rem;
-    text-align: left;
-    margin-right: 50rem;
-    font-family: 'IBM Plex Serif', serif;
-}
-
-
-/* !section: Description of Hobbies */
+/* ! Section: Description of Hobbies */
 
 
 /* // todo: Make transition if header/text is clicked */
@@ -425,7 +411,7 @@ section p {
 }
 
 
-/* !general */
+/* ! General */
 
 a {
     cursor: pointer;
