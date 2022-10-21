@@ -348,11 +348,28 @@ todo: Überarbeite grid und mache comments, classes, values etc. besser! */
     text-align: center;
     color: white;
     font-family: 'Work Sans';
+    margin: 1em;
+}
+
+.headingInfo {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans';
+    margin-top: -1em;
+}
+
+.WIP {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
 }
 
 section {
     margin-top: 100px;
-    color: White;
+    color: white;
     font-size: 35px;
     text-align: left;
 }
